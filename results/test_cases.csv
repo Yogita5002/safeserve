@@ -1,0 +1,21 @@
+id,test,input,expected,result
+TC01,test_haversine_known_distance,"T Nagar (13.0418,80.2341) to Adyar (13.0012,80.2565)",4–6 km,PASSED
+TC02,test_travel_time_zero_for_same_point,same point twice,0 min,PASSED
+TC03,test_hot_afternoon_halves_window,"cooked meal, 14:00, summer",60 min window,PASSED
+TC04,test_cool_morning_keeps_two_hours,"cooked meal, 04:00, summer",120 min window,PASSED
+TC05,test_winter_afternoon_two_hours,"cooked meal, 14:00, winter",120 min window,PASSED
+TC06,test_bakery_not_temperature_limited,"bakery, 14:00, summer",1440 min window,PASSED
+TC07,test_static_baseline_believes_four_hours,"any perishable, static rule",expiry = prep + 240 min,PASSED
+TC08,test_late_delivery_is_unsafe,"cooked, prep 14:00, delivered 15:30, summer",unsafe,PASSED
+TC09,test_two_phase_clock_rejects_long_ride,"hot-held, prep 13:00, pickup 15:00, rides 40 / 75 min",safe / unsafe,PASSED
+TC10,test_veg_only_recipient_rejects_non_veg,"non-veg meal, veg-only recipient",incompatible,PASSED
+TC11,test_hungarian_respects_capacity,"10 pending donations, seed 3",no recipient over capacity,PASSED
+TC12,test_safeserve_never_delivers_unsafe_food[summer],"full day, seed 0, summer",0 unsafe meals,PASSED
+TC13,test_safeserve_never_delivers_unsafe_food[winter],"full day, seed 0, winter",0 unsafe meals,PASSED
+TC14,test_status_quo_delivers_unsafe_food_in_summer,"FCFS-Static, seed 0, summer",> 0 unsafe meals,PASSED
+TC15,test_same_seed_is_reproducible,seed 7 run twice,identical safe meals,PASSED
+TC16,test_recipient_capacity_never_exceeded,"SafeServe full day, seed 2",received ≤ capacity for all,PASSED
+TC17,test_valid_donation_accepted,well-formed donation,no errors,PASSED
+TC18,test_out_of_area_rejected,donation at Mumbai latitude,'outside service area',PASSED
+TC19,test_duplicate_detected,two identical posts,duplicate flagged,PASSED
+TC20,test_generated_data_passes_validation,"all 45 generated donations, seed 5",all valid,PASSED

@@ -1,0 +1,9 @@
+climate,vs,mean_gain_pts,wins,p_value
+summer,FCFS-Static,15.0,9,0.0039
+summer,FCFS-Adaptive,0.7,5,0.9219
+summer,Opt-Static,11.6,10,0.002
+summer,SafeServe-NoHungarian,2.8,7,0.1641
+winter,FCFS-Static,7.2,8,0.0195
+winter,FCFS-Adaptive,0.5,4,1.0
+winter,Opt-Static,6.3,10,0.002
+winter,SafeServe-NoHungarian,-3.1,2,0.1094

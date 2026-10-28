@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/safeserve
+plugins: anyio-4.15.1
+collecting ... collected 20 items
+
+tests/test_safeserve.py::test_haversine_known_distance PASSED            [  5%]
+tests/test_safeserve.py::test_travel_time_zero_for_same_point PASSED     [ 10%]
+tests/test_safeserve.py::test_hot_afternoon_halves_window PASSED         [ 15%]
+tests/test_safeserve.py::test_cool_morning_keeps_two_hours PASSED        [ 20%]
+tests/test_safeserve.py::test_winter_afternoon_two_hours PASSED          [ 25%]
+tests/test_safeserve.py::test_bakery_not_temperature_limited PASSED      [ 30%]
+tests/test_safeserve.py::test_static_baseline_believes_four_hours PASSED [ 35%]
+tests/test_safeserve.py::test_late_delivery_is_unsafe PASSED             [ 40%]
+tests/test_safeserve.py::test_two_phase_clock_rejects_long_ride PASSED   [ 45%]
+tests/test_safeserve.py::test_veg_only_recipient_rejects_non_veg PASSED  [ 50%]
+tests/test_safeserve.py::test_hungarian_respects_capacity PASSED         [ 55%]
+tests/test_safeserve.py::test_safeserve_never_delivers_unsafe_food[summer] PASSED [ 60%]
+tests/test_safeserve.py::test_safeserve_never_delivers_unsafe_food[winter] PASSED [ 65%]
+tests/test_safeserve.py::test_status_quo_delivers_unsafe_food_in_summer PASSED [ 70%]
+tests/test_safeserve.py::test_same_seed_is_reproducible PASSED           [ 75%]
+tests/test_safeserve.py::test_recipient_capacity_never_exceeded PASSED   [ 80%]
+tests/test_safeserve.py::test_valid_donation_accepted PASSED             [ 85%]
+tests/test_safeserve.py::test_out_of_area_rejected PASSED                [ 90%]
+tests/test_safeserve.py::test_duplicate_detected PASSED                  [ 95%]
+tests/test_safeserve.py::test_generated_data_passes_validation PASSED    [100%]
+
+============================= 20 passed in 12.93s ==============================

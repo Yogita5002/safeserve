@@ -1,0 +1,7 @@
+category,perishable,window_ambient_le32_min,window_ambient_gt32_min,controlled_storage_cap_min,source
+cooked_meal,1,120,60,240,USDA FSIS 2-hour/1-hour rule; FSSAI Surplus Food Regulations 2019 (Schedule I)
+dairy_sweet,1,120,60,240,USDA FSIS 2-hour/1-hour rule (milk-based perishables)
+cut_fruit_salad,1,120,60,240,USDA FSIS 2-hour/1-hour rule (cut produce)
+bakery,0,1440,1440,1440,USDA FSIS exception list (bread/cookies); assumption: 24 h same-day policy
+whole_produce,0,1440,1440,1440,USDA FoodKeeper whole fruit/veg pantry guidance; assumption: 24 h policy
+packaged_dry,0,4320,4320,4320,Printed best-before date; assumption: 72 h policy
