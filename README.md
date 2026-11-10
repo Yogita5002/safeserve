@@ -1,6 +1,6 @@
 # SafeServe — temperature-adaptive food redistribution
 
-**Team:** Charitha Sri, Yogita Y V, Lahari Y · SRM Institute of Science and Technology · 21CSC402P Report Writing
+**Team:** Charitha Sri, Yogita Y V, Lahari Y, Ameya· SRM Institute of Science and Technology · 21CSC402P Report Writing
 
 SafeServe matches surplus food to recipients and routes volunteers so that cooked food is delivered
 inside its *temperature-dependent* safe window (USDA FSIS: 2 h, or 1 h above 32 °C; FSSAI 2019
